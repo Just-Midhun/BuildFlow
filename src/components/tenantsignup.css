@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "oswald_regular";
+    src: url("../../assets/fonts/oswald/Oswald-Regular.ttf");
+}
+@font-face {
+    font-family: "oswald_light";
+    src: url("../../assets/fonts/oswald/Oswald-Light.ttf");
+}
+@font-face {
+    font-family: "oswald_bold";
+    src: url("../../assets/fonts/oswald/Oswald-Bold.ttf");
+}
+@font-face {
+    font-family: "jomhuria";
+    src: url("../../assets/fonts/Jomhuria/Jomhuria-Regular.ttf");
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    height: 150px;
+    background-color: #E6F0D0;
+    display: flex;
+    align-items: center;
+    font-family: "jomhuria";
+    font-size: 85px;
+    letter-spacing: 6px;
+    color: #006200;
+}
+img{
+    padding-left: 30px;
+    height: 130px;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.signuptext{
+    color: #006C00;
+    font-family: "oswald_regular";
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.signupcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+.signupcontainer input {
+    height: 50px;
+    width: 400px;
+    border-radius: 30px;
+    border: 1px solid #006200;
+    text-align: center;
+    font-family: "oswald_light";
+    font-size: 20px;
+}
+.submit{
+    height: 50px;
+    width: 400px;
+    background-color: #006200;
+    border: 1px solid #006200;
+    border-radius: 30px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "oswald_regular";
+    font-size: 20px;
+    cursor: pointer;
+}
+.login{
+    text-align: center;
+    margin-top: 20px;
+}
+.login a {
+    font-family: "oswald_regular";
+    color: black;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.login p {
+    font-family: "oswald_light";
+    font-weight: 500;
+}
