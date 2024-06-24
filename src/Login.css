@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "oswald_regular";
+    src: url("../assets/fonts/oswald/Oswald-Regular.ttf");
+}
+@font-face {
+    font-family: "oswald_light";
+    src: url("../assets/fonts/oswald/Oswald-Light.ttf");
+}
+@font-face {
+    font-family: "jomhuria";
+    src: url("../assets/fonts/Jomhuria/Jomhuria-Regular.ttf");
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.header{
+    height: 150px;
+    background-color: #E6F0D0;
+    display: flex;
+    align-items: center;
+    font-family: "jomhuria";
+    font-size: 85px;
+    letter-spacing: 6px;
+    color: #006200;
+}
+img{
+    padding-left: 30px;
+    height: 130px;
+}
+.logincontainer {
+    font-family: "oswald_regular";
+    text-align: center;
+    padding: 40px 0;
+}
+
+.loginheader {
+    font-size: 50px;
+    color: #006C00;
+    font-weight: lighter;
+}
+.buttonscontainer {
+    display: flex;
+    justify-content: center;
+    gap: 200px; 
+    margin-top: 40px;
+}
+.login-button {
+    border: none;
+    border-radius: 20px;
+    background-color: #E6F0D0;
+    height: 250px;
+    width: 500px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-button p {
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch:extra-condensed;
+}
+
+.login-button:hover {
+    background-color: #d4e3bc;
+}
+.signup{
+    margin-top: 60px;
+}
+.signup a {
+    color: black;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 35px;
+}
+.signup p {
+    font-family: "oswald_light";
+    font-weight: 500;
+}
