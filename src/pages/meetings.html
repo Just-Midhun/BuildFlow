@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetings</title>
+    <link rel="stylesheet" href="../components/meetings.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="../../assets/images/logo.png">
+        <div class="navbuttons">
+            <button class="eventnavbutton"><img src="../../assets/images/tenant/events.png"></button>
+            <button class="navbutton"><img src="../../assets/images/tenant/bills.png"></button>
+            <button class="navbutton"><img src="../../assets/images/tenant/status.png"></button>
+            <button class="navbutton"><img src="../../assets/images/tenant/complaints.png"></button>
+            <button class="navbutton"><img src="../../assets/images/tenant/chats.png"></button>
+        </div>
+        <button class="signout"><img src="../../assets/images/tenant/signout.png"></button>
+    </div>
+    <div class="content">
+        <h1 class="title">Meetings</h1>
+        <div class="controls">
+            <select id="month-select" class="month-button">
+                <option value="0">Jan</option>
+                <option value="1">Feb</option>
+                <option value="2">Mar</option>
+                <option value="3">Apr</option>
+                <option value="4">May</option>
+                <option value="5">Jun</option>
+                <option value="6">Jul</option>
+                <option value="7">Aug</option>
+                <option value="8">Sep</option>
+                <option value="9">Oct</option>
+                <option value="10">Nov</option>
+                <option value="11">Dec</option>
+            </select>
+            <input type="number" id="year-input" class="year-button" value="2024" min="1900" max="2100">
+        </div>
+        <div class="main-content">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>T</div>
+                    <div>W</div>
+                    <div>T</div>
+                    <div>F</div>
+                    <div>S</div>
+                </div>
+                <div class="calendar-body" id="calendar-body">
+                    <!-- Calendar days will be generated here -->
+                </div>
+            </div>
+            <div class="schedule">
+
+            </div>
+        </div>
+    </div>
+    <script src="../components/meetings.js"></script>
+</body>
+</html>
