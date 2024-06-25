@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 @font-face {
     font-family: "oswald_regular";
@@ -23,6 +22,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
+    min-height: 100vh;
 }
 .maincontainer{
     display: flex;
