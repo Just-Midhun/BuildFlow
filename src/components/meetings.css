@@ -9,6 +9,10 @@
 }
 body {
     font-family: "oswald_regular";
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 .navbar {
     position:fixed;
@@ -65,11 +69,12 @@ button img {
 }
 
 .content {
-    margin-left: 140px;
-    padding: 20px;
-    width: calc(100% - 140px);
+    margin-left: 160px;
+    margin-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     height: 100vh;
-    overflow-y: auto;
+    overflow-y:auto;
 }
 
 .title {
@@ -109,7 +114,6 @@ button img {
     flex-direction: column;
     border: 2px solid green;
     border-radius: 10px;
-    overflow: hidden;
     flex-grow: 1;
 }
 

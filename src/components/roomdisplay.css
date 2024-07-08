@@ -7,6 +7,10 @@
     font-family: "oswald_regular";
     src: url("../../assets/fonts/oswald/Oswald-Regular.ttf");
 }
+@font-face {
+    font-family: "oswald_light";
+    src: url("../../assets/fonts/oswald/Oswald-Light.ttf");
+}
 body {
     font-family: "oswald_regular";
     min-height: 100vh;
@@ -69,7 +73,7 @@ button img {
     margin-right: 50px;
     padding-top: 30px;
     padding-bottom: 50px;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .title {
@@ -85,22 +89,18 @@ button img {
     margin-bottom: 40px;
 }
 
-.dashboard-button {
+.status-button {
     padding: 10px 20px;
     font-size: 16px;
     border: 2px solid #006200;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     background-color: white;
     width: 200px;
 }
-
-.dashboard-button:first-child {
-    background-color:#006200;
+.status-button:first-child {
+    background-color: #006200;
     color: white;
-}
-.dashboard-button:last-child{
-    color: #006200;
 }
 
 .main-content {
@@ -108,4 +108,21 @@ button img {
     height: 70vh;
     border: 1px solid #006200;
     border-radius: 10px;
+    padding: 30px 30px;
+}
+.rooms{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.room {
+    align-content: center;
+    text-align: center;
+    border: 2px solid #006C00;
+    border-radius: 10px;
+    height: 60px;
+    font-size: 25px;
+    color: #006200;
+    font-family: "oswald_light";
+    letter-spacing: 1px;
 }
