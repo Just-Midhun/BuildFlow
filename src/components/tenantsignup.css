@@ -4,19 +4,19 @@
 }
 @font-face {
     font-family: "oswald_regular";
-    src: url("../../assets/fonts/oswald/Oswald-Regular.ttf");
+    src: url("../../public/assets/fonts/oswald/Oswald-Regular.ttf");
 }
 @font-face {
     font-family: "oswald_light";
-    src: url("../../assets/fonts/oswald/Oswald-Light.ttf");
+    src: url("../../public/assets/fonts/oswald/Oswald-Light.ttf");
 }
 @font-face {
     font-family: "oswald_bold";
-    src: url("../../assets/fonts/oswald/Oswald-Bold.ttf");
+    src: url("../../public/assets/fonts/oswald/Oswald-Bold.ttf");
 }
 @font-face {
     font-family: "jomhuria";
-    src: url("../../assets/fonts/Jomhuria/Jomhuria-Regular.ttf");
+    src: url("../../public/assets/fonts/Jomhuria/Jomhuria-Regular.ttf");
 }
 body{
     display: flex;
