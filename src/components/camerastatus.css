@@ -43,7 +43,7 @@ img {
     gap: 30px;
 }
 
-.navbutton {
+.navbutton,.camnavbutton {
     height: 50px;
     width: 50px;
     background-color: white;
@@ -52,7 +52,9 @@ img {
     padding: 10px 10px 10px 10px;
     cursor: pointer;
 }
-
+.camnavbutton{
+    background-color: #E6F0D0;
+}
 button img {
     width: 30px;
     height: 30px;
@@ -75,12 +77,23 @@ button img {
     padding-bottom: 50px;
     height: 100vh;
 }
-
 .title {
     font-size: 36px;
     margin-bottom: 20px;
     font-weight: lighter;
     letter-spacing: 1px;
+}
+.navbutton:hover::after, .camnavbutton:hover::after, .signout:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    margin-left: 40%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
 }
 
 .buttons {
@@ -89,7 +102,7 @@ button img {
     margin-bottom: 40px;
 }
 
-.status-button {
+.status-button,.liftstatus-button {
     padding: 10px 20px;
     font-size: 16px;
     border: 2px solid #006200;
@@ -99,10 +112,10 @@ button img {
     width: 200px;
 }
 
-.status-button:last-child {
+.liftstatus-button {
     color:#006200 ;
 }
-.status-button:first-child {
+.status-button{
     background-color: #006200;
     color: white;
 }

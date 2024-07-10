@@ -83,7 +83,18 @@ button img {
     font-weight: lighter;
     letter-spacing: 1px;
 }
-
+.navbutton:hover::after, .eventnavbutton:hover::after, .signout:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    margin-left: 40%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+}
 .controls {
     display: flex;
     gap: 20px;

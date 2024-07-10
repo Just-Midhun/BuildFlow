@@ -43,7 +43,7 @@ img {
     gap: 30px;
 }
 
-.navbutton {
+.navbutton,.camnavbutton {
     height: 50px;
     width: 50px;
     background-color: white;
@@ -52,7 +52,9 @@ img {
     padding: 10px 10px 10px 10px;
     cursor: pointer;
 }
-
+.camnavbutton{
+    background-color: #E6F0D0;
+}
 button img {
     width: 30px;
     height: 30px;
@@ -67,6 +69,19 @@ button img {
 .signout img{
     width: 40px;
     height: auto;
+}
+
+.navbutton:hover::after, .camnavbutton:hover::after, .signout:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    margin-left: 40%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
 }
 .content {
     margin-left: 160px;
@@ -89,7 +104,7 @@ button img {
     margin-bottom: 40px;
 }
 
-.status-button {
+.status-button,.camstatus-button {
     padding: 10px 20px;
     font-size: 16px;
     border: 2px solid #006200;
@@ -99,10 +114,10 @@ button img {
     width: 200px;
 }
 
-.status-button:first-child {
+.camstatus-button {
     color:#006200 ;
 }
-.status-button:last-child {
+.status-button{
     background-color: #006200;
     color: white;
 }

@@ -64,6 +64,19 @@ button img {
     width: 40px;
     height: auto;
 }
+
+.navbutton:hover::after, .signout:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    margin-left: 40%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+}
 .content {
     margin-left: 160px;
     margin-right: 50px;
@@ -85,7 +98,7 @@ button img {
     margin-bottom: 40px;
 }
 
-.dashboard-button {
+.dashboard-button,.billsdashboard-button {
     padding: 10px 20px;
     font-size: 16px;
     border: 2px solid #006200;
@@ -95,11 +108,11 @@ button img {
     width: 200px;
 }
 
-.dashboard-button:first-child {
+.dashboard-button{
     background-color:#006200;
     color: white;
 }
-.dashboard-button:last-child{
+.billsdashboard-button{
     color: #006200;
 }
 

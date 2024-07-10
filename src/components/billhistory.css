@@ -37,7 +37,7 @@ img {
     gap: 30px;
 }
 
-.navbutton {
+.navbutton ,.billsnavbutton{
     height: 50px;
     width: 50px;
     background-color: white;
@@ -46,7 +46,9 @@ img {
     padding: 10px 10px 10px 10px;
     cursor: pointer;
 }
-
+.billsnavbutton{
+    background-color: #E6F0D0;
+}
 button img {
     width: 30px;
     height: 30px;
@@ -72,9 +74,21 @@ button img {
 
 .title {
     font-size: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: lighter;
     letter-spacing: 1px;
+}
+.navbutton:hover::after,.billsnavbutton:hover::after, .signout:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    margin-left: 40%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
 }
 .main-content {
     width: 100%;

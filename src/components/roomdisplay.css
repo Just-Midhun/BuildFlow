@@ -43,7 +43,7 @@ img {
     gap: 30px;
 }
 
-.navbutton {
+.navbutton ,.rdnavbutton{
     height: 50px;
     width: 50px;
     background-color: white;
@@ -52,7 +52,9 @@ img {
     padding: 10px 10px 10px 10px;
     cursor: pointer;
 }
-
+.rdnavbutton{
+    background-color: #E6F0D0;
+}
 button img {
     width: 30px;
     height: 30px;
@@ -68,6 +70,19 @@ button img {
     width: 40px;
     height: auto;
 }
+.navbutton:hover::after, .rdnavbutton:hover::after, .signout:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    margin-left: 40%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
 .content {
     margin-left: 160px;
     margin-right: 50px;
