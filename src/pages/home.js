@@ -1,7 +1,18 @@
 import React from 'react';
 import '../components/home.css';
 
+import { useNavigate, Link} from 'react-router-dom';
+/*useNavigator to creator a navigator logic
+Link to use the naviagator to create a link to another page*/
+
+
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate('/login');
+  };
+
   return (
     <div>
       {/* Navbar */}
@@ -10,7 +21,7 @@ const Home = () => {
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <a href="#" className="logo"><img src="/assets/images/logo.png" alt="Logo" className="logo-image" /></a>
-          <li><a href="#services">Login</a></li>
+          <li><Link to="/login">Login</Link></li>
           <li><a href="#contact">SignUp</a></li>
         </ul>
       </nav>
@@ -25,15 +36,15 @@ const Home = () => {
 
       {/* Events */}
       <div className="home-events">
-        <section id="about">
+        <section id="1">
           <img src="/assets/images/assistance.png" alt="Assistance" className="logo-image" />
           <h1>Assistance</h1>
         </section>
-        <section id="services">
+        <section id="2">
           <img src="/assets/images/event.png" alt="Events" className="logo-image" />
           <h1>Events</h1>
         </section>
-        <section id="contact">
+        <section id="3">
           <img src="/assets/images/payment.png" alt="Payments" className="logo-image" />
           <h1>Payments</h1>
         </section>
