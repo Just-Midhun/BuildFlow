@@ -7,6 +7,7 @@ import Manager from './pages/manager_login';
 import Tenant from './pages/tenant_login';
 import TenantSignUp from './pages/tenant_signup';
 import CurrentHappenings from './pages/current_happenings';
+import Bills from './pages/bills';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/tenant_login" element={<Tenant/>}/>
         <Route path="/tenant_signup" element={<TenantSignUp/>}/>
         <Route path="/current_happenings" element={<CurrentHappenings/>}/>
+        <Route path="/bills" element={<Bills/>}/>
       </Routes>
     </Router>
   );
