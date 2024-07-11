@@ -2,9 +2,10 @@ import '../components/tenantlogin.css';
 
 const TenantLogin = () => {
   return (
+    <div className="mainlogin-container">
     <div className="maincontainer">
       <div className="logo">
-        <img src="/assets/images/logo.png" alt="Logo" />
+        <img className="mainlogin-img" src="/assets/images/logo.png" alt="Logo" />
       </div>
       <div className="logintext">
         <p>Login</p>
@@ -20,6 +21,7 @@ const TenantLogin = () => {
           <button>&#8592;</button>
         </a>
       </div>
+    </div>
     </div>
   );
 };

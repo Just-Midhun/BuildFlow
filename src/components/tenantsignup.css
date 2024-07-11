@@ -18,7 +18,7 @@
     font-family: "jomhuria";
     src: url("../../public/assets/fonts/Jomhuria/Jomhuria-Regular.ttf");
 }
-body{
+.signup-container{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -33,7 +33,7 @@ body{
     letter-spacing: 6px;
     color: #006200;
 }
-img{
+.signup-img{
     padding-left: 30px;
     height: 130px;
 }

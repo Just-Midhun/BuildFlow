@@ -22,7 +22,7 @@ const Home = () => {
           <li><a href="#about">About</a></li>
           <a href="#" className="logo"><img src="/assets/images/logo.png" alt="Logo" className="logo-image" /></a>
           <li><Link to="/login">Login</Link></li>
-          <li><a href="#contact">SignUp</a></li>
+          <li><Link to="/tenant_signup">SignUp</Link></li>
         </ul>
       </nav>
 

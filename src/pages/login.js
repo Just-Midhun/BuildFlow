@@ -13,11 +13,15 @@ const Login = () => {
         navigate('/tenant_login');
       };
 
+    const handleTenantSignupClick = () => {
+      navigate('/tenant_signup');
+    };
+
   return (
-    <div>
+    <div className="login-container">
       <div className="header">
         <div className="logo">
-          <img src="/assets/images/logo.png" alt="Logo" />
+          <img className="login-img" src="/assets/images/logo.png" alt="Logo" />
         </div>
         <div>
           <p>BuildFlow</p>
@@ -28,12 +32,12 @@ const Login = () => {
           <p>Login</p>
         </div>
         <div className="buttonscontainer">
-          <button className="login-button"><Link to="/manager_login">Login as Building Manager</Link></button>
-          <button className="login-button"><Link to="/tenant_login">Login as Tenant</Link></button>              
+          <button className="login-button"><p><Link to="/manager_login">Login as Building Manager</Link></p></button>
+          <button className="login-button"><p><Link to="/tenant_login">Login as Tenant</Link></p></button>              
         </div>
         <div className="signup">
           <p>Do you have an account? </p>
-          <a href="signup.html">SignUp</a>
+          <a><Link to="/tenant_signup">SignUp</Link></a>
         </div>
       </div>
     </div>
