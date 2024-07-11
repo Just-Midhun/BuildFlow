@@ -1,6 +1,14 @@
 import '../components/tenantlogin.css';
 
+import { useNavigate, Link} from 'react-router-dom';
+
 const TenantLogin = () => {
+
+  const navigate = useNavigate();
+
+  const handleDashBoardClick = () => {
+    navigate('/current_happenings');
+  }
   return (
     <div className="mainlogin-container">
     <div className="maincontainer">
@@ -15,7 +23,7 @@ const TenantLogin = () => {
         <input type="text" placeholder="RoomID" />
         <input type="password" placeholder="Password" />
       </div>
-      <input type="submit" className="submit" />
+      <input type="submit" className="submit" onClick={handleDashBoardClick}/>
       <div className="backbutton">
         <a href="/login">
           <button>&#8592;</button>

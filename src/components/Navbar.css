@@ -1,0 +1,71 @@
+/* src/components/Navbar.css */
+
+.dashboard-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    background-color: #e6f0d0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 40px; /* Reduce gap to ensure everything fits */
+    overflow: hidden;
+  }
+  
+  .navbar-img {
+    height: 100px;
+  }
+  
+  .navbuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex-grow: 1; /* Allow the navbuttons to take up available space */
+  }
+  
+  .navbutton {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid #006200;
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .navbar-button-img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .signout {
+    background: none;
+    border: none;
+    padding-bottom: 20px;
+    cursor: pointer;
+    margin-top: auto; /* Push the signout button to the bottom */
+  }
+  
+  .signout img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .navbutton:hover::after,
+  .signout:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    margin-left: 0%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  
