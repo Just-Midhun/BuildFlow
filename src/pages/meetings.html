@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetings</title>
+    <link rel="stylesheet" href="../components/meetings.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="current_happenings.html" data-tooltip="Dashboard"><img src="../../assets/images/logo.png"></a>
+        <div class="navbuttons">
+            <button class="eventnavbutton" data-tooltip="Events"><a href="meetings.html"><img src="../../assets/images/tenant/events.png"></a></button>
+            <button class="navbutton" data-tooltip="Bill History"><a href="billhistory.html"><img src="../../assets/images/tenant/bills.png"></a></button>
+            <button class="navbutton" data-tooltip="Status"><a href="camera_status.html"><img src="../../assets/images/tenant/status.png"></a></button>
+            <button class="navbutton" data-tooltip="Complaints"><a href="current_complaints.html"><img src="../../assets/images/tenant/complaints.png"></a></button>
+            <button class="navbutton" data-tooltip="Chats"><a href="room_display.html"><img src="../../assets/images/tenant/chats.png"></a></button>
+        </div>
+        <button class="signout" data-tooltip="Sign Out"><img src="../../assets/images/tenant/signout.png"></button>
+    </div>
+    <div class="content">
+        <h1 class="title">Meetings</h1>
+        <div class="controls">
+            <select id="month-select" class="month-button">
+                <option value="0">Jan</option>
+                <option value="1">Feb</option>
+                <option value="2">Mar</option>
+                <option value="3">Apr</option>
+                <option value="4">May</option>
+                <option value="5">Jun</option>
+                <option value="6">Jul</option>
+                <option value="7">Aug</option>
+                <option value="8">Sep</option>
+                <option value="9">Oct</option>
+                <option value="10">Nov</option>
+                <option value="11">Dec</option>
+            </select>
+            <input type="number" id="year-input" class="year-button" value="2024" min="1900" max="2100">
+        </div>
+        <div class="main-content">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>T</div>
+                    <div>W</div>
+                    <div>T</div>
+                    <div>F</div>
+                    <div>S</div>
+                </div>
+                <div class="calendar-body" id="calendar-body">
+                    <!-- Calendar days will be generated here -->
+                </div>
+            </div>
+            <div class="schedule">
+
+            </div>
+        </div>
+    </div>
+    <script src="../components/meetings.js"></script>
+</body>
+</html>

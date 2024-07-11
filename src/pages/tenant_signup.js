@@ -9,7 +9,6 @@ const TenantSignUp = () => {
     navigate('/tenant_login');
   };
 
-
   return (
     <div className="signup-container">
       <div className="header">

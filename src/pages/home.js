@@ -13,6 +13,10 @@ const Home = () => {
     navigate('/login');
   };
 
+  const handleSignUpClick = () => {
+    navigate('/tenant_signup');
+  };
+
   return (
     <div>
       {/* Navbar */}

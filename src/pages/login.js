@@ -32,8 +32,8 @@ const Login = () => {
           <p>Login</p>
         </div>
         <div className="buttonscontainer">
-          <button className="login-button"><p><Link to="/manager_login">Login as Building Manager</Link></p></button>
-          <button className="login-button"><p><Link to="/tenant_login">Login as Tenant</Link></p></button>              
+          <button className="mainlogin-button"><p><Link to="/manager_login">Login as Building Manager</Link></p></button>
+          <button className="mainlogin-button"><p><Link to="/tenant_login">Login as Tenant</Link></p></button>              
         </div>
         <div className="signup">
           <p>Do you have an account? </p>

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "oswald_regular";
+    src: url("../../assets/fonts/oswald/Oswald-Regular.ttf");
+}
+body {
+    font-family: "oswald_regular";
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    position:fixed;
+    top: 0;
+    height: 100vh;
+    width: 120px;
+    background-color: #E6F0D0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 100px;
+}
+
+img {
+    height: 100px;
+}
+
+.navbuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbutton ,.billsnavbutton{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid #006200;
+    border-radius: 100%;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+.billsnavbutton{
+    background-color: #E6F0D0;
+}
+button img {
+    width: 30px;
+    height: 30px;
+}
+
+.signout {
+    background: none;
+    border: none;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.signout img{
+    width: 40px;
+    height: auto;
+}
+.content {
+    margin-left: 160px;
+    margin-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    height: 100vh;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.navbutton:hover::after,.billsnavbutton:hover::after, .signout:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    margin-left: 40%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+}
+.main-content {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid green;
+    border-radius: 20px;
+    padding-right: 5px;
+}
+.innercontainer{
+    width: 100%;
+    height: 80vh;
+    padding: 40px 40px;
+    overflow: auto;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+.payments{
+    border: 2px solid #006C00;
+    border-radius: 20px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 2px;
+}
+.paymentdetails{
+    flex: 3;
+    align-content: center;
+    padding-left: 25px;
+    color: #006C00;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.paymentdetails p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.paymentammount{
+    background-color: #006C00;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    flex: 2;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #006C00   ;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #006200;
+}
