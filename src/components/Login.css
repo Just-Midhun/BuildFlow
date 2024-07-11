@@ -21,6 +21,7 @@
     min-height: 100vh;
 }
 .lheader{
+.lheader{
     height: 150px;
     background-color: #E6F0D0;
     display: flex;
@@ -29,6 +30,7 @@
     font-size: 85px;
     letter-spacing: 6px;
     color: #006200;
+    display: flex;
     display: flex;
 }
 
@@ -56,6 +58,7 @@
     margin-top: 40px;
 }
 .mainlogin-button {
+.mainlogin-button {
     border: none;
     border-radius: 20px;
     background-color: #E6F0D0;
@@ -69,6 +72,7 @@
     color: inherit;
 }
 
+.mainlogin-button:hover {
 .mainlogin-button:hover {
     background-color: #d4e3bc;
 }
