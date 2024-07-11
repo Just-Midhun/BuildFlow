@@ -20,7 +20,7 @@
     flex-direction: column;
     min-height: 100vh;
 }
-.lheader{
+.header{
     height: 150px;
     background-color: #E6F0D0;
     display: flex;
@@ -29,7 +29,6 @@
     font-size: 85px;
     letter-spacing: 6px;
     color: #006200;
-    display: flex;
     display: flex;
 }
 

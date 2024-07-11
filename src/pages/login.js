@@ -1,4 +1,4 @@
-import '../components/login.css';
+import '../components/Login.css';
 
 import { useNavigate, Link} from 'react-router-dom';
 
@@ -18,11 +18,9 @@ const Login = () => {
     };
 
   return (
-    <div className="login-container">
-      <div className="header">
-        <div className="logo">
-          <img className="login-img" src="/assets/images/logo.png" alt="Logo" />
-        </div>
+    <div>
+      <div className="lheader">
+          <img className="mainlogo" src="/assets/images/logo.png" alt="Logo" />
         <div>
           <p>BuildFlow</p>
         </div>
@@ -32,12 +30,12 @@ const Login = () => {
           <p>Login</p>
         </div>
         <div className="buttonscontainer">
-          <button className="login-button"><p><Link to="/manager_login">Login as Building Manager</Link></p></button>
-          <button className="login-button"><p><Link to="/tenant_login">Login as Tenant</Link></p></button>              
+          <Link to="/manager_login"><button className="mainlogin-button">Login as Building Manager</button></Link>
+          <Link to="/tenant_login"><button className="mainlogin-button">Login as Tenant</button></Link>              
         </div>
         <div className="signup">
           <p>Do you have an account? </p>
-          <a><Link to="/tenant_signup">SignUp</Link></a>
+          <Link to={"/tenant_signup"}>SignUp</Link>
         </div>
       </div>
     </div>
