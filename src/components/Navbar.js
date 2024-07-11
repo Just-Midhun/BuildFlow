@@ -11,6 +11,9 @@ const Navbar = () => {
     navigate('/current_happenings');
   };
 
+  const handleMeetingsClick = () => {
+    navigate('/meetings');
+  }
   return (
     <div className="dashboard-navbar">
       <a data-tooltip="Dashboard">
@@ -22,8 +25,8 @@ const Navbar = () => {
         />
       </a>
       <div className="navbuttons">
-        <button className="navbutton" data-tooltip="Events">
-          <a href="meetings.html">
+        <button className="navbutton" data-tooltip="Events" onClick={handleMeetingsClick}>
+          <a >
             <img className="navbar-button-img" src="../../assets/images/tenant/events.png" alt="Events" />
           </a>
         </button>

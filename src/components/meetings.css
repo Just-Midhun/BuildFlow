@@ -5,9 +5,10 @@
 }
 @font-face {
     font-family: "oswald_regular";
-    src: url("../../assets/fonts/oswald/Oswald-Regular.ttf");
+    src: url("../../public/assets/fonts/oswald/Oswald-Regular.ttf");
 }
-body {
+
+.meetings-container{
     font-family: "oswald_regular";
     min-height: 100vh;
     margin: 0;
@@ -80,7 +81,7 @@ button img {
 .title {
     font-size: 36px;
     margin-bottom: 20px;
-    font-weight: lighter;
+    font-family: "oswald_regular";
     letter-spacing: 1px;
 }
 .navbutton:hover::after, .eventnavbutton:hover::after, .signout:hover::after {
@@ -147,7 +148,7 @@ button img {
 
 .calendar-body div {
     border: 1px solid green;
-    height: 100px;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
