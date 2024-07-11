@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-.header{
+.lheader{
     height: 150px;
     background-color: #E6F0D0;
     display: flex;
@@ -28,8 +28,10 @@ body {
     font-size: 85px;
     letter-spacing: 6px;
     color: #006200;
+    display: flex;
 }
-img{
+.mainlogo{
+    padding-bottom: 30px;
     padding-left: 30px;
     height: 130px;
 }
@@ -50,7 +52,7 @@ img{
     gap: 200px; 
     margin-top: 40px;
 }
-.login-button {
+.mainlogin-button {
     border: none;
     border-radius: 20px;
     background-color: #E6F0D0;
@@ -58,14 +60,12 @@ img{
     width: 500px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-.login-button p {
     font-size: 30px;
     font-weight: 600;
     font-stretch:extra-condensed;
 }
 
-.login-button:hover {
+.mainlogin-button:hover {
     background-color: #d4e3bc;
 }
 .signup{
