@@ -3,7 +3,7 @@ import '../components/tenantsignup.css';
 import { useNavigate, Link} from 'react-router-dom';
 
 const TenantSignUp = () => {
-  const nav = useNavigate;
+  const navigate = useNavigate;
 
   const handleTenantClick = () => {
     navigate('/tenant_login');
@@ -12,14 +12,12 @@ const TenantSignUp = () => {
   return (
     <div className="signup-container">
       <div className="header">
-        <div className="logo">
           <img className="signup-img" src="/assets/images/logo.png" alt="Logo" />
-        </div>
         <div>
           <p>BuildFlow</p>
         </div>
       </div>
-      <div className="maincontainer">
+      <div className="mmaincontainer">
         <div className="signuptext">
           <p>SignUp</p>
         </div>

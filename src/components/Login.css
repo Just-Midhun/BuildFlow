@@ -20,7 +20,7 @@
     flex-direction: column;
     min-height: 100vh;
 }
-.header{
+.lheader{
     height: 150px;
     background-color: #E6F0D0;
     display: flex;
@@ -32,7 +32,8 @@
     display: flex;
 }
 
-.login-img{
+.mainlogo{
+    padding-bottom: 20px;
     padding-left: 30px;
     height: 130px;
 }
@@ -56,7 +57,7 @@
     margin-top: 40px;
 }
 
-.login-button {
+.mainlogin-button {
     border: none;
     border-radius: 20px;
     background-color: #E6F0D0;
@@ -64,14 +65,14 @@
     width: 500px;
     cursor: pointer;
     transition: background-color 0.3s;
+    color: black;
     font-size: 30px;
     font-weight: 600;
     font-stretch:extra-condensed;
-    color: inherit;
 }
 
 
-.login-button:hover {
+.mainlogin-button:hover {
     background-color: #d4e3bc;
 }
 .signup{
