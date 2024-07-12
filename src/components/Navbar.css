@@ -68,4 +68,10 @@
     white-space: nowrap;
     z-index: 10;
   }
+
+  .navbutton.active {
+    background-color: #e0f7e0; /* Change this to your preferred highlight color */
+    border: 1px solid #004400; /* Darker border for active state */
+  }
+  
   
