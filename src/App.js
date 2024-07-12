@@ -14,8 +14,8 @@ import CameraStatus from './pages/camera_status';
 import LiftStatus from './pages/lift_status';
 import CurrentComplaints from './pages/current_complaints';
 import PreviousComplaints from './pages/previous_complaints';
-/*import RoomDisplay from './pages/room_display';
-*/
+import RoomDisplay from './pages/room_display';
+
 import './App.css';
 
 function App() {
@@ -35,8 +35,8 @@ function App() {
         <Route path="/lift_status" element={<LiftStatus/>}/>
         <Route path="/current_complaints" element={<CurrentComplaints/>}/>
         <Route path="/previous_complaints" element={<PreviousComplaints/>}/>
-        {/*<Route path="/room_display" element={<RoomDisplay/>}/>
-        */}
+        <Route path="/room_display" element={<RoomDisplay/>}/>
+        
       </Routes>
     </Router>
   );
