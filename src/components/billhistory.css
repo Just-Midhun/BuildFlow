@@ -9,7 +9,7 @@
     src: url("../../public/assets/fonts/oswald/Oswald-Regular.ttf");
 }
 
-body {
+.bill-history-page {
     font-family: "oswald_regular";
     min-height: 100vh;
     margin: 0;
