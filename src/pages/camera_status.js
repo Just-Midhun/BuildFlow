@@ -15,7 +15,7 @@ const CameraStatus = () => {
             <div className="camera-status-content">
                 <h1 className="title">Status</h1>
                 <div className="buttons">
-                    <button className="status-button">Camera</button>
+                    <button className="camera-status-button">Camera</button>
                     <Link to="/lift_status">
                         <button className="liftstatus-button">Lift</button>
                     </Link>

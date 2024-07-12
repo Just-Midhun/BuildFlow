@@ -95,7 +95,8 @@ button img {
     margin-bottom: 20px;
 }
 
-.status-button, .liftstatus-button {
+.camera-status-button, .liftstatus-button {
+    width: 200px;
     padding: 10px 20px;
     font-size: 16px;
     border: 2px solid green;
@@ -104,13 +105,13 @@ button img {
     background-color: white;
 }
 
-.status-button{
-    color: green;
+.camera-status-button{
+    background-color: green;
+    color: white;
 }
 
 .liftstatus-button {
-    background-color: green;
-    color: white;
+    color: green;
 }
 
 .camera-status-main-content {
