@@ -28,7 +28,7 @@ const Navbar = () => {
   }
   
   const handleComplaintsClick = () => {
-    navigate('/current_complaint')
+    navigate('/current_complaints')
   }
 
   const handleSignOutClick = () => {

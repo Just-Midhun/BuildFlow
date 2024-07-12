@@ -5,13 +5,13 @@
 }
 @font-face {
     font-family: "oswald_regular";
-    src: url("../../assets/fonts/oswald/Oswald-Regular.ttf");
+    src: url("../../public/assets/fonts/oswald/Oswald-Regular.ttf");
 }
 @font-face {
     font-family: "oswald_light";
-    src: url("../../assets/fonts/oswald/Oswald-Light.ttf");
+    src: url("../../public/assets/fonts/oswald/Oswald-Light.ttf");
 }
-body {
+.previous-complaints-page {
     font-family: "oswald_regular";
     min-height: 100vh;
     margin: 0;
@@ -84,7 +84,7 @@ button img {
     white-space: nowrap;
     z-index: 10;
 }
-.content {
+.previous-complaints-content {
     margin-left: 160px;
     margin-right: 50px;
     padding-top: 30px;
@@ -122,7 +122,7 @@ button img {
     color: white;
 }
 
-.main-content {
+.previous-complaints-main-content {
     width: 100%;
     height: 70vh;
     border: 1px solid #006200;
