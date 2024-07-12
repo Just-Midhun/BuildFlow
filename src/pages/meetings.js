@@ -28,7 +28,7 @@ const Meetings = () => {
     return (
         <div className="container">
             <Navbar />
-            <div className="content">
+            <div className="meetings-content">
                 <h1 className="title">Meetings</h1>
                 <div className="controls">
                     <select 
@@ -60,7 +60,7 @@ const Meetings = () => {
                         onChange={(e) => setYear(parseInt(e.target.value))}
                     />
                 </div>
-                <div className="main-content">
+                <div className="meetings-main-content">
                     <div className="calendar">
                         <div className="calendar-header">
                             <div>S</div>

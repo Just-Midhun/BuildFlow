@@ -14,6 +14,27 @@ const Navbar = () => {
   const handleMeetingsClick = () => {
     navigate('/meetings');
   }
+
+  const handleBillClick = () => {
+    navigate('/payment_history');
+  }
+
+  const handleStatusClick = () => {
+    navigate('/camera_status');
+  }
+
+  const handleRoomClick=() => {
+    navigate('/room_display');
+  }
+  
+  const handleComplaintsClick = () => {
+    navigate('/current_complaint')
+  }
+
+  const handleSignOutClick = () => {
+    navigate('/');
+  }
+
   return (
     <div className="dashboard-navbar">
       <a data-tooltip="Dashboard">
@@ -30,28 +51,28 @@ const Navbar = () => {
             <img className="navbar-button-img" src="../../assets/images/tenant/events.png" alt="Events" />
           </a>
         </button>
-        <button className="navbutton" data-tooltip="Bill History">
-          <a href="billhistory.html">
+        <button className="navbutton" data-tooltip="Bill History" onClick={handleBillClick}>
+          <a >
             <img className="navbar-button-img" src="../../assets/images/tenant/bills.png" alt="Bill History" />
           </a>
         </button>
-        <button className="navbutton" data-tooltip="Status">
-          <a href="camera_status.html">
+        <button className="navbutton" data-tooltip="Status" onClick={handleStatusClick}>
+          <a>
             <img className="navbar-button-img" src="../../assets/images/tenant/status.png" alt="Status" />
           </a>
         </button>
-        <button className="navbutton" data-tooltip="Complaints">
-          <a href="current_complaints.html">
+        <button className="navbutton" data-tooltip="Complaints" onClick={handleComplaintsClick}>
+          <a >
             <img className="navbar-button-img" src="../../assets/images/tenant/complaints.png" alt="Complaints" />
           </a>
         </button>
-        <button className="navbutton" data-tooltip="Chats">
-          <a href="room_display.html">
+        <button className="navbutton" data-tooltip="Chats" onClick={handleRoomClick}>
+          <a>
             <img className="navbar-button-img" src="../../assets/images/tenant/chats.png" alt="Chats" />
           </a>
         </button>
       </div>
-      <button className="signout" data-tooltip="Sign Out">
+      <button className="signout" data-tooltip="Sign Out" onClick={handleSignOutClick}>
         <img className="navbar-img" src="../../assets/images/tenant/signout.png" alt="Sign Out" />
       </button>
     </div>

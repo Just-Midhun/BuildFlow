@@ -69,7 +69,7 @@ button img {
     height: auto;
 }
 
-.content {
+.meetings-content {
     margin-left: 160px;
     margin-right: 50px;
     padding-top: 30px;
@@ -116,7 +116,7 @@ button img {
     color: white;
 }
 
-.main-content {
+.meetings-main-content {
     display: flex;
     gap: 20px;
 }
