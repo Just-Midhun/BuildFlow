@@ -10,9 +10,9 @@ import CurrentHappenings from './pages/current_happenings';
 import Bills from './pages/bills';
 import Meetings from './pages/meetings';
 import PaymentHistory from './pages/billhistory';
-/*import CameraStatus from './pages/camera_status';
+import CameraStatus from './pages/camera_status';
 import LiftStatus from './pages/lift_status';
-import CurrentComplaints from './pages/current_complaints';
+/*import CurrentComplaints from './pages/current_complaints';
 import RoomDisplay from './pages/room_display';
 */
 import './App.css';
@@ -30,9 +30,9 @@ function App() {
         <Route path="/bills" element={<Bills/>}/>
         <Route path="/meetings" element={<Meetings/>}/>
         <Route path="/payment_history" element={<PaymentHistory/>}/>
-        {/*<Route path="/camera_status" element={<CameraStatus/>}/>
+        <Route path="/camera_status" element={<CameraStatus/>}/>
         <Route path="/lift_status" element={<LiftStatus/>}/>
-        <Route path="/current_complaints" element={<CurrentComplaints/>}/>
+        {/*<Route path="/current_complaints" element={<CurrentComplaints/>}/>
         <Route path="/room_display" element={<RoomDisplay/>}/>
         */}
       </Routes>

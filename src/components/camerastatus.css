@@ -3,23 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: "oswald_regular";
-    src: url("../../assets/fonts/oswald/Oswald-Regular.ttf");
+    src: url("../../public/assets/fonts/oswald/Oswald-Regular.ttf");
 }
-@font-face {
-    font-family: "oswald_light";
-    src: url("../../assets/fonts/oswald/Oswald-Light.ttf");
-}
-body {
+
+.camera-status-page {
     font-family: "oswald_regular";
     min-height: 100vh;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
+
 .navbar {
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -43,18 +42,20 @@ img {
     gap: 30px;
 }
 
-.navbutton,.camnavbutton {
+.navbutton, .camnavbutton {
     height: 50px;
     width: 50px;
     background-color: white;
     border: 1px solid #006200;
     border-radius: 100%;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     cursor: pointer;
 }
-.camnavbutton{
+
+.camnavbutton {
     background-color: #E6F0D0;
 }
+
 button img {
     width: 30px;
     height: 30px;
@@ -66,68 +67,61 @@ button img {
     padding-bottom: 20px;
     cursor: pointer;
 }
-.signout img{
+
+.signout img {
     width: 40px;
     height: auto;
 }
-.content {
+
+.camera-status-content {
     margin-left: 160px;
     margin-right: 50px;
     padding-top: 30px;
     padding-bottom: 50px;
     height: 100vh;
+    overflow-y: auto;
 }
+
 .title {
     font-size: 36px;
     margin-bottom: 20px;
     font-weight: lighter;
     letter-spacing: 1px;
 }
-.navbutton:hover::after, .camnavbutton:hover::after, .signout:hover::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    margin-left: 40%;
-    transform: translateX(-50%);
-    background-color: black;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    white-space: nowrap;
-    z-index: 10;
-}
 
 .buttons {
     display: flex;
     gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-.status-button,.liftstatus-button {
+.status-button, .liftstatus-button {
     padding: 10px 20px;
     font-size: 16px;
-    border: 2px solid #006200;
-    border-radius: 10px;
+    border: 2px solid green;
+    border-radius: 5px;
     cursor: pointer;
     background-color: white;
-    width: 200px;
+}
+
+.status-button{
+    color: green;
 }
 
 .liftstatus-button {
-    color:#006200 ;
-}
-.status-button{
-    background-color: #006200;
+    background-color: green;
     color: white;
 }
 
-.main-content {
-    width: 100%;
-    height: 70vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
+.camera-status-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.camerastatus{
-    border: 1px solid #006200;
+
+.camerastatus {
+    flex: 1 1 45%;
+    border: 2px solid green;
     border-radius: 10px;
+    height: 200px;
 }
