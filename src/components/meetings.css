@@ -87,7 +87,7 @@ button img {
 .navbutton:hover::after, .eventnavbutton:hover::after, .signout:hover::after {
     content: attr(data-tooltip);
     position: absolute;
-    margin-left: 40%;
+    margin-left: 0px;
     transform: translateX(-50%);
     background-color: black;
     color: white;
