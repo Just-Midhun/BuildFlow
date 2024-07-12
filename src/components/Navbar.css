@@ -59,7 +59,6 @@
   .signout:hover::after {
     content: attr(data-tooltip);
     position: absolute;
-    margin-left: 0px;
     margin-top: 10px;
     transform: translateX(-50%);
     background-color: black;
