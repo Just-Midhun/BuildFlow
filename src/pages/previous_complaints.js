@@ -13,7 +13,7 @@ const PreviousComplaints = () => {
                     <Link to="/current_complaints">
                         <button className="cc-button">Current</button>
                     </Link>
-                    <button className="status-button">Previous</button>
+                    <button className="prev-status-button">Previous</button>
                 </div>
                 <div className="previous-complaints-main-content">
                     {Array(4).fill().map((_, index) => (

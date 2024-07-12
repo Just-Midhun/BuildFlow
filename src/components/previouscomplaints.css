@@ -103,7 +103,7 @@ button img {
     margin-bottom: 40px;
 }
 
-.status-button,.cc-button {
+.prev-status-button,.cc-button {
     padding: 10px 20px;
     font-size: 16px;
     border: 2px solid #006200;
@@ -116,7 +116,7 @@ button img {
 .cc-button {
     color:#006200 ;
 }
-.status-button{
+.prev-status-button{
     background-color: #006200;
     color: white;
 }
