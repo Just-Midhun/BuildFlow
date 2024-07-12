@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 @font-face {
     font-family: "oswald_regular";
     src: url("../../public/assets/fonts/oswald/Oswald-Regular.ttf");
 }
-
+@font-face {
+    font-family: "oswald_light";
+    src: url("../../public/assets/fonts/oswald/Oswald-Light.ttf");
+}
 .lift-status-page {
     font-family: "oswald_regular";
     min-height: 100vh;
@@ -16,9 +18,8 @@
     padding: 0;
     overflow: hidden;
 }
-
 .navbar {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -42,20 +43,18 @@ img {
     gap: 30px;
 }
 
-.navbutton, .camnavbutton {
+.navbutton,.camnavbutton {
     height: 50px;
     width: 50px;
     background-color: white;
     border: 1px solid #006200;
     border-radius: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
     cursor: pointer;
 }
-
-.camnavbutton {
+.camnavbutton{
     background-color: #E6F0D0;
 }
-
 button img {
     width: 30px;
     height: 30px;
@@ -67,19 +66,29 @@ button img {
     padding-bottom: 20px;
     cursor: pointer;
 }
-
-.signout img {
+.signout img{
     width: 40px;
     height: auto;
 }
 
+.navbutton:hover::after, .camnavbutton:hover::after, .signout:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    margin-left: 40%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+}
 .lift-status-content {
     margin-left: 160px;
     margin-right: 50px;
     padding-top: 30px;
     padding-bottom: 50px;
     height: 100vh;
-    overflow-y: auto;
 }
 
 .title {
@@ -92,46 +101,52 @@ button img {
 .buttons {
     display: flex;
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.status-button, .camstatus-button {
+.status-button,.camstatus-button {
     padding: 10px 20px;
     font-size: 16px;
-    border: 2px solid green;
-    border-radius: 5px;
+    border: 2px solid #006200;
+    border-radius: 10px;
     cursor: pointer;
     background-color: white;
+    width: 200px;
 }
 
 .camstatus-button {
-    background-color: green;
+    color:#006200 ;
+}
+.status-button{
+    background-color: #006200;
     color: white;
 }
 
 .lift-status-main-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.liftstatus {
-    flex: 1 1 30%;
-    border: 2px solid green;
+    width: 100%;
+    height: 70vh;
+    border: 1px solid #006200;
     border-radius: 10px;
-    height: 100px;
+    padding: 30px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 30px;
+}
+
+.liftstatus{
+    border: 2px solid #006C00;
+    border-radius: 10px ;
+    height: 70px;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    font-size: 40px;
+    color: #006200;
+    font-family: "oswald_light";
+    letter-spacing: 1px;
 }
-
-.lift_number {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.status {
-    font-size: 18px;
-    color: green;
+.status{
+    font-weight: bolder;
 }
